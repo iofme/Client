@@ -1,0 +1,11 @@
+<section>
+    @for (user of user; track user.id) {
+    <div>
+        <img src="{{user.photoUrl}}" alt="">
+        <p>{{user.username}}</p>
+        <p>{{user.age}}</p>
+        <p>{{user.role}}</p>
+    </div>
+    <p>{{user.about}}</p>
+    }
+</section>
