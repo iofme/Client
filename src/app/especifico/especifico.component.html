@@ -1,11 +1,14 @@
-<section>
-    @for (user of user; track user.id) {
+@for (user of user; track user.id) {<section class="w-screen flex flex-col items-center ">
     <div>
-        <img src="{{user.photoUrl}}" alt="">
-        <p>{{user.username}}</p>
-        <p>{{user.age}}</p>
-        <p>{{user.role}}</p>
+        <img class="w-[10rem] h-[10rem] rounded-full" src="{{user.photoUrl}}" alt="">
+        <div class="text-center flex flex-col gap-3 mt-8 mb-14 ">
+            <p class="text-[21px] leading-[34px]">{{user.username}}</p>
+            <p>{{user.age}}</p>
+            <p>{{user.role}}</p>
+        </div>
     </div>
     <p>{{user.about}}</p>
-    }
+    <p>{{user.videoUrl}}</p>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed?v=vJt_K1bFUeA&list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw" frameborder="0" allowfullscreen></iframe>
 </section>
+}
